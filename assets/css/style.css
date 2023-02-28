@@ -547,7 +547,7 @@ svg #cap {
     background-image: url(../images/background-shape/bg-shape1.png);
     background-size: cover;
     background-repeat: no-repeat;
-  	padding: 400px 0 160px 0;
+  	padding: 202px 0 160px 0;
     position: relative; 
 }
 .slider-obutton ,.slider-pbutton ,.play-button ,.slider-pbutton p{
@@ -587,7 +587,7 @@ svg #cap {
 }
 .slider-video-section
 {
-	margin-top: 125px;
+	margin-top: 42px;
 }
 .play-button
 {
@@ -792,7 +792,7 @@ svg #cap {
 /*********************** 10. Our_items ********************/
 
 .our-item-section {
-    margin-top: -265px;
+    /* margin-top: -265px; */
     padding-bottom: 130px;
 }
 .our-item-tab.nav-tabs{
@@ -1883,3 +1883,38 @@ iframe#player {
 .cs-footer-icon a:hover{
 	color: #ceb66a;
 }
+.image-specialities{
+	margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background: rgb(26,59,105);
+  background: linear-gradient(140deg, rgba(26,59,105,1) 0%, rgba(0,0,0,1) 100%); */
+}
+.image-specialities .wrap{
+	width: 78vw;
+	height: 400px;
+	display: flex;
+	flex-direction: row;
+	gap: 5px;
+  }
+  
+  .image-specialities img{
+	height: 100%;
+	flex: 1;
+	object-fit: cover;
+	overflow: hidden;
+	transition: all 500ms;
+	border-radius: 10px;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, .5);
+	filter: grayscale(100%) sepia(100%);
+  }
+  
+  .image-specialities img:hover{
+	flex: 7;
+	filter: grayscale(0%) sepia(0%);
+  }
